@@ -1,9 +1,15 @@
 package fecha;
 
 public class Fecha {
+<<<<<<< HEAD
 	private int d; //dia
 	private int m; //mes
 	private int a; //anyo
+=======
+	private int d; //d�a
+	private int m; //mes
+	private int a; //a�o
+>>>>>>> PMD-Refactor
 
 	
 	public Fecha() {
@@ -43,13 +49,21 @@ public class Fecha {
 		return diaCorrecto && mesCorrecto && anioCorrecto;
 	}
 
+<<<<<<< HEAD
 	// Metodo esBisiesto. Solo lo usa fechaCorrecta, por eso es privado
+=======
+	// M�todo esBisiesto. Solo lo usa fechaCorrecta, por eso es privado
+>>>>>>> PMD-Refactor
 	private boolean esBisiesto() {
 		boolean esBisiesto = (a % 4 == 0 && a % 100 != 0 || a % 400 == 0);
 		return esBisiesto;
 	}
 
 	// Metodo diaSiguiente
+<<<<<<< HEAD
+=======
+	// metodo comentado
+>>>>>>> PMD-Refactor
 	public void diaSiguiente() {
 		d++;
 		if (!fechaCorrecta()) {
@@ -62,7 +76,11 @@ public class Fecha {
 		}
 	}
 
+<<<<<<< HEAD
 	// Metodo toString
+=======
+	// M�todo toString
+>>>>>>> PMD-Refactor
 	public String toString() {
 		if (d < 10 && m < 10) {
 			return "0" + d + "-0" + m + "-" + a;
